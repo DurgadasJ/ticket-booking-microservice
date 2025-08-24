@@ -28,6 +28,11 @@ dependencies {
 
 	// For RestTemplate load balancing
 	implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer'
+	implementation 'org.projectlombok:lombok:1.18.26'
+	implementation 'org.projectlombok:lombok:1.18.26'
+	implementation 'org.projectlombok:lombok:1.18.26'
+	implementation 'org.projectlombok:lombok:1.18.26'
+	implementation 'org.projectlombok:lombok:1.18.26'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
