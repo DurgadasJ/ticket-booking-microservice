@@ -27,9 +27,9 @@ public class BookingController {
 
         // 2. Call Payment Service
         String paymentResponse = restTemplate.postForObject(
-                "http://payment-service/api/payments",
+              "http://payment-service/api/payments",
                 Map.of("bookingId", bookingId, "amount", request.get("amount")),
-                String.class
+              String.class
         );
 
         // 3. Call Notification Service
@@ -38,6 +38,7 @@ public class BookingController {
                 Map.of("bookingId", bookingId, "message", "Booking confirmed!"),
                 String.class
         );
+	//String paymentResponse = "Success";
 
         return "Booking Successful! ID: " + bookingId + " | " + paymentResponse;
     }
